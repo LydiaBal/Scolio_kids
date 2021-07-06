@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clConnect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_header_selector"
+    tools:context=".ui.login.SplashFragment"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Οδηγίες για σωστή λήψη φωτογραφίας"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/instruction1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Οδηγίες για λήψη φωτογραφίας σε όρθια θέση: "
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="fill"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        />
+    <TextView
+        android:id="@+id/instruction2"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="1ο βήμα:  Επιλέξτε ένα μέρος στο σπίτι σας.
+Ένα απλό φόντο είναι το καλύτερο.Η επιλογή ενός σημείου από μια πόρτα βοηθά επειδή το πλαίσιο της πόρτας δίνει μια ευθεία γραμμή για σύγκριση."
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="fill|center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction1"
+        />
+    <TextView
+        android:id="@+id/instruction3"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="2ο Βήμα: Ζητήστε από το παιδί σας να φοράει ρούχα που να ταιριάζουν έτσι ώστε να φαίνεται το σχήμα της μέσης και των γοφών."
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="fill|center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction2"
+        />
+    <TextView
+        android:id="@+id/instruction4"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="3ο βήμα: Ζητήστε από το παιδί σας να σταθεί μπροστά σας.
+Δώστε τις οδηγίες: «Σηκωθείτε ευθεία, κοιτάζοντας με.
+* Μην προσπαθήσετε να αλλάξετε τη στάση τους. Αφήστε τους να σταθούν όπως φυσικά.
+* Βεβαιωθείτε ότι η κάμερα βρίσκεται ακριβώς μπροστά τους και ότι δεν είναι λοξή από το πλάι.
+* Πλησιάστε το παιδί σας έτσι ώστε να γεμίσει ολόκληρη την εικόνα.
+* Βεβαιωθείτε ότι το κεφάλι και τα πόδια του παιδιού σας φαίνονται στην εικόνα."
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="fill|center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction3"
+        />
+    <TextView
+        android:id="@+id/instruction5"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="4ο Βήμα: Ζητήστε από το παιδί σας να φοράει ρούχα που να ταιριάζουν έτσι ώστε να φαίνεται το σχήμα της μέσης και των γοφών."
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="fill|center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_header_selector"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Εικόνα Ασθενούς"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="90dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:srcCompat="@color/somegrey" />
+
+    <ImageView
+        android:id="@+id/imageViewStroke"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="90dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:srcCompat="@color/somegrey" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        />
+
+    <TextView
+        android:id="@+id/angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/angletitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/angletitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Μοίρες:"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintRight_toLeftOf="@+id/angle"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/text_quest"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="30dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:text="Are you a doctor or a user?"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="25dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/imageView" />-->
+
+    <RadioGroup android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <RadioButton android:id="@+id/one_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Γωνία με μια ευθεία"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            />
+        <RadioButton android:id="@+id/two_lines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Γωνία με δύο ευθείες"
+            android:textColor="@color/white"
+            />
+    </RadioGroup>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/angle_choice"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:backgroundTint="@color/white"-->
+    <!--        android:text="Σχεδίαση Αξόνων"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="@color/blue"-->
+    <!--        android:textSize="18dp"-->
+    <!--        app:cornerRadius="30dp"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

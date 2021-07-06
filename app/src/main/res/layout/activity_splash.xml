@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_header_selector"
+    tools:context=".ui.login.SplashFragment">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="360dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="the_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_logo_foreground"
+        app:cornerRadius="40dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@mipmap/ic_logo_mail"
+        android:drawablePadding="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:text="Σύνδεση με mail"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:text="Εγγραφή"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

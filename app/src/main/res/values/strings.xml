@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Scolio_kids</string>
+    <!-- Strings related to login -->
+    <string name="login_name">Συνδεση μέσω Email</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Κωδικός</string>
+    <string name="action_sign_in">Σύνδεση</string>
+    <string name="welcome">"Καλώς ήρθες"</string>
+    <string name="invalid_username">Μη έγκυρη διεύθυνση Email</string>
+    <string name="invalid_password">Ο κωδικός πρέπει να έχει μήκος άνω των 5 χαρακτήρων</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- Strings related to signup -->
+    <string name="signup_name">Εγγραφή μέσω Email</string>
+    <string name="prompt_name">Όνομα</string>
+    <string name="prompt_retype_password">Επανάληψη κωδικού</string>
+    <string name="action_sign_up">Εγγραφή</string>
+    <string name="password_mismatch">Οι κωδικοί δεν ταιριάζουν</string>
+    <string name="empty_name">Το όνομα είναι κενό</string>
+    <string name="signup_failed">Η εγγραφή απέτυχε</string>
+    <string name="email_sent">Αποστολή email επιβεβαίωσης στο</string>
+    <string name="email_failed">Αποτυχία αποστολής email επιβεβαίωσης!</string>
+    <string name="verify_email">Παρακαλώ επιβεβαιώστε το email σας!</string>
+
+
+</resources>
